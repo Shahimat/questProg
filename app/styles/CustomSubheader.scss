@@ -6,6 +6,13 @@
     padding: 5px 30px;
 }
 
-.page-subheader {
-    margin: 30px 70px 20px;/*Первое - от верхнего, второе - от левого и правого, третье - от нижнего*/
+@media screen {
+    .page-subheader {
+        margin: 30px 70px 20px;/*Первое - от верхнего, второе - от левого и правого, третье - от нижнего*/
+    }
+}
+@media screen and (max-width: 600px) {
+    .page-subheader {
+        margin: 30px 40px 20px;/*Первое - от верхнего, второе - от левого и правого, третье - от нижнего*/
+    }
 }
