@@ -1,0 +1,5 @@
+{{#if @action}}
+    <button class="btn-choise" {{on 'click' @action}}>{{yield}}</button>
+{{else}} 
+    <button class="btn-choise">{{yield}}</button>
+{{/if}}
