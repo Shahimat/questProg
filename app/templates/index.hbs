@@ -3,7 +3,9 @@
 
 <ContentContainer>
     <p>Какой опросник вы хотели-бы выбрать?</p>
-    <RadioList></RadioList>
+    <RadioList
+        @data={{this.model}}
+        @onChangeChoise={{this.onChangeChoise}}/>
     <CustomButton>Следующий</CustomButton>
     <LinkTo @route="questionnaires_list">вперед</LinkTo>
 </ContentContainer>

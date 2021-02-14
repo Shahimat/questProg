@@ -1,14 +1,14 @@
 <div class="radiogroup">
-    <div class="radiogroup__item">
-        <input type="radio" name="answer" value="a1" class="radio-btn"/>
-        <p class="radio-text">Офицерский состав</p>
-    </div>
-    <div class="radiogroup__item">
-        <input type="radio" name="answer" value="a2" class="radio-btn"/>
-        <p class="radio-text">Операционная система</p>
-    </div>
-    <div class="radiogroup__item">
-        <input type="radio" name="answer" value="a3" class="radio-btn"/>
-        <p class="radio-text">Большой полосатый мух</p>
-    </div>
+    {{#each @data as |item|}}
+        <div class="radiogroup__item">
+            <input 
+                type="radio"
+                name="answer"
+                value="a{{item.id}}"
+                class="radio-btn"
+                {{on 'input' (fn @onChangeChoise item.text)}}
+            />
+            <p class="radio-text">{{item.text}}</p>
+        </div>
+    {{/each}}
 </div>
