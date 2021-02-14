@@ -1,0 +1,22 @@
+.radiogroup {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.radiogroup__item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 4px 0;
+}
+
+.radio-btn {
+    margin: 0;
+}
+
+.radio-text {
+    margin: 0;
+    padding-left: 10px;
+}
