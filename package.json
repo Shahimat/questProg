@@ -18,7 +18,7 @@
     "lint:hbs:fix": "ember-template-lint . --fix",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
-    "start": "ember serve",
+    "start": "node proxy & ember serve",
     "test": "npm-run-all lint test:*",
     "test:ember": "ember test"
   },
@@ -29,6 +29,7 @@
     "@glimmer/tracking": "^1.0.3",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
+    "cors-anywhere": "^0.4.3",
     "ember-auto-import": "^1.10.1",
     "ember-cli": "~3.24.0",
     "ember-cli-app-version": "^4.0.0",
