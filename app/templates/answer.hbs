@@ -1,5 +1,8 @@
 {{page-title "Answer"}}
 
-<CustomTitle>HomePageA</CustomTitle>
-<CustomSubtitle>HomePageA</CustomSubtitle>
-<LinkTo @route="index">вперед</LinkTo>
+<CustomTitle>Страница ответа</CustomTitle>
+<CustomSubtitle>Ваш ответ - "{{this.questway.answerObject}}"</CustomSubtitle>
+<ContentContainer>
+    <p>Не желаете-ли повторить?</p>
+    <CustomButton @action={{fn this.newQuestionnaires}}>Начать</CustomButton>
+</ContentContainer>

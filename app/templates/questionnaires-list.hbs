@@ -1,5 +1,11 @@
 {{page-title "QuestionnairesList"}}
 
 <CustomTitle>Страница опроса</CustomTitle>
-<CustomSubtitle>HomePageQL</CustomSubtitle>
-<LinkTo @route="questionnaires">вперед</LinkTo>
+<CustomSubtitle>{{this.questway.way}}</CustomSubtitle>
+<ContentContainer>
+    <p>{{this.questway.question}}</p>
+    <RadioList
+        @data={{this.answers}}
+        @onChangeChoise={{this.onChangeChoise}}/>
+    <CustomButton @action={{fn this.setAnswer}}>Выбрать</CustomButton>
+</ContentContainer>

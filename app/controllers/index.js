@@ -16,7 +16,6 @@ export default class IndexController extends Controller {
             alert('Выберите опросник');
             return;
         }
-        this.questway.newQuestway();
         this.transitionToRoute('questionnaires_list');
     }
 
