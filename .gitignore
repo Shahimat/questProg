@@ -27,3 +27,4 @@ node_modules/
 
 # Папка с конечным проектом
 /production
+electron-out/

@@ -28,8 +28,14 @@
     "@glimmer/component": "^1.0.3",
     "@glimmer/tracking": "^1.0.3",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "broccoli-asset-rev": "^3.0.0",
     "cors-anywhere": "^0.4.3",
+    "devtron": "^1.4.0",
+    "electron-forge": "^5.2.4",
+    "electron-prebuilt-compile": "8.2.0",
     "ember-auto-import": "^1.10.1",
     "ember-cli": "~3.24.0",
     "ember-cli-app-version": "^4.0.0",
@@ -41,6 +47,7 @@
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.1",
     "ember-data": "~3.24.0",
+    "ember-electron": "^2.10.2",
     "ember-export-application-global": "^2.0.1",
     "ember-fetch": "^8.0.2",
     "ember-load-initializers": "^2.1.2",
@@ -68,5 +75,13 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "electron-compile": "^6.4.4",
+    "electron-protocol-serve": "^1.4.0",
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "config": {
+    "forge": "./ember-electron/electron-forge-config.js"
   }
 }
