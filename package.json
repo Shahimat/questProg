@@ -19,6 +19,7 @@
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
     "start": "node proxy & ember serve",
+    "start:dev": "ember build --environment=develop & node ./service/index",
     "test": "npm-run-all lint test:*",
     "test:ember": "ember test"
   },
@@ -79,7 +80,9 @@
   "dependencies": {
     "electron-compile": "^6.4.4",
     "electron-protocol-serve": "^1.4.0",
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "express": "^4.17.1",
+    "sqlite3": "^5.0.2"
   },
   "config": {
     "forge": "./ember-electron/electron-forge-config.js"
